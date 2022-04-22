@@ -2274,7 +2274,7 @@ jobs:
                 restartPolicy: Never
                 containers:
                 - name: post-install-job
-                  image: python:3.6.12-slim-buster
+                  image: python:3.7.9-slim-buster
                   command: ['sh','-c','pip install --user -r /scripts/requirements.txt && python /scripts/create_default_user.py']
                   volumeMounts:
                   - name: config-volume
